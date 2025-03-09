@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <!--Tailwindcss-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="p-10 md:pl-96 md:pr-96 ">
+    <div class="p-3 bg-gray-200 rounded-lg shadow-lg ">
+
+        <!--Top Name-->
+        <div class="flex justify-center">
+            <h1 class="text-green-400 font-bold text-2xl ">Student Registration Form</h1>
+        </div>
+
+        <!--Input Boxeses-->
+        <div id="one" class="pt-5 font-bold md:pl-16 ">
+            <label for="name">Name: </label><br>
+            <input id="peyar" type="text" class=" block w-96 px-4 py-2 border border-gray-400 rounded-md md:w-11/12 "
+                placeholder="Enter your name " required><br>
+
+            <label for="age">Age: </label><br>
+            <input id="age" class="block w-96 px-4 py-2 border border-gray-400 rounded-md md:w-11/12" type="number"
+                placeholder="Enter your age " required><br>
+
+
+            <label for="gender">Gender: </label><br>
+            <select class=" cursor-pointer block w-96 px-4 py-2 border border-gray-400 rounded-md md:w-11/12" name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="course">Course: </label><br>
+            <select class=" cursor-pointer block w-96 px-4 py-2 border border-gray-400 rounded-md md:w-11/12"id="course">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c">C,C++ Programs</option>
+            </select><br>
+
+            <label for="email">Email: </label><br>
+            <input id="email"  class="block w-96 px-4 py-2 border border-gray-400 rounded-md md:w-11/12" type="email"
+                placeholder="Enter your valid email " required><br>
+
+
+        </div>
+
+        <!--Submit Button-->
+        <div class="flex justify-center">
+            <button  id="btn" class="bg-blue-500 p-2 text-white font-bold rounded-md ">submit</button>
+        </div><br>
+
+        <!--Footer-->
+        <div class="flex justify-center">
+            <h2 class="text-green-400 font-bold text-2xl">Registered Students</h2><br><br>
+
+        </div>
+
+        <!--Input Datas-->
+        <div class="overflow-x-auto mt-5">
+            <form action="">
+            <table class="w-full border-collapse border border-gray-300">
+
+                <tr class="bg-gray-200">
+                    <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Age</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Gender</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Course</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Email</th>
+                </tr>
+            </table>  
+            
+            <table class="w-full border-collapse border border-gray-300">
+
+                <tr id="dataGoes" class="bg-gray-200">
+                   <!-- Data will be inserted here -->
+
+                   
+                </tr>
+            </table>  
+        </form>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
